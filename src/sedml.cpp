@@ -321,7 +321,7 @@ public:
             }
             else
             {
-                for (int vc=0; vc < dg->getNumVariables(); ++vc)
+                for (unsigned int vc=0; vc < dg->getNumVariables(); ++vc)
                 {
                     SedVariable* v = dg->getVariable(vc);
                     MyVariable var;
@@ -335,7 +335,7 @@ public:
                     d.variables[v->getId()] = var;
                 }
             }
-            for (int pc=0; pc < dg->getNumParameters(); ++pc)
+            for (unsigned int pc=0; pc < dg->getNumParameters(); ++pc)
             {
                 SedParameter* p = dg->getParameter(pc);
                 std::cout << "\t\tParameter " << p->getId()
